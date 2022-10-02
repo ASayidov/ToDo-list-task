@@ -1,5 +1,6 @@
 let input = document.querySelector('input');
 let wrap = document.getElementsByClassName('wrap')[0]
+let todoAll= document.getElementsByClassName('toDoWrap')[0]
 
 
 const addTodo = () => {
@@ -22,10 +23,15 @@ if(input.value !=='') {div.innerHTML=`
       </div>
     </div>
 `}
-wrap.append(div)
+todoAll.append(div)
 input.value =""
 }
 
 const del = ()=> {
   div.remove()
+}
+
+const deleteAll = () => {
+  todoAll.innerHTML=""
+
 }
