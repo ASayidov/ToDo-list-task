@@ -64,7 +64,9 @@ body {
 .buttons p {
   width: 390%;
 }
-
+#delAll {
+  display: none;
+}
 
 </style>
 <body>
@@ -74,18 +76,10 @@ body {
     <input type="text" id="inputId" placeholder="ToDo" autofocus>
     <button id="btn" onclick="addTodo()">ADD</button>
     <div class="toDoWrap"></div>
-    <!-- <div class="addedTodo">
-      <div class="todo__content">
-      <h4 id="todoText">test content</h4>
-      </div>
-       <div class="buttons">
-        <button id="edit">EDIT</button>
-        <button id="del">DELETE</button>
-        <button id="compl">COMPLETE</button>
-        <p class="time">inserted 21.09.2022 17:00</p>
-      </div>
-    </div> -->
-    <button id="delall" onclick="deleteAll()">DELETE ALL</button>
+    <div class="empty">
+      <h2>You haven't added any todos yet!</h2>
+    </div>
+  <button id="delAll" onclick="deleteAll()">DELETE ALL</button>
   </div>
 
   <script src="./app.js"></script>

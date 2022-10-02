@@ -24,6 +24,8 @@ if(input.value !=='') {div.innerHTML=`
     </div>
 `}
 todoAll.append(div)
+document.querySelector(".empty").style.display='none'
+document.querySelector("#delAll").style.display='inline-block'
 input.value =""
 }
 
