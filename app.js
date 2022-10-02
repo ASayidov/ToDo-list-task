@@ -2,9 +2,10 @@ let input = document.querySelector('input');
 let wrap = document.getElementsByClassName('wrap')[0]
 
 
-const add = () => {
+const addTodo = () => {
 
 let div = document.createElement('div')
+div.setAttribute('id','div')
 let time = new Date()
 let date = time.getDate(),month = time.getMonth(), year = time.getFullYear(),hour = time.getHours(), minute=time.getMinutes();
 
@@ -26,5 +27,5 @@ input.value =""
 }
 
 const del = ()=> {
-  console.log("ishlaid");
+  div.remove()
 }
